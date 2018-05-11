@@ -262,7 +262,13 @@ int main() {
 				// ref_v = 48;
 			// }
 			
-			//Finding a reference velocity to use
+			//Plaing constraints
+			double min_s_left, min_s_right;
+			min_s_left = 99999;
+			min_s_right = 99999;
+
+			bool pos_left = false, pos_right = false;
+
 			for(unsigned int i = 0; i< sensor_fusion.size(); i++) {
 				//If car is in same lane
 				float d = sensor_fusion[i][6];
@@ -286,14 +292,40 @@ int main() {
 					} 
 					
 				} else if (too_close) {
-					if (fabs(check_car_s - car_s) >= 15) {
-						lane = d;
+					if (d < (2 + 4 * lane + 2)) {
+						if ((check_car_s > car_s) && (check_car_s - car_s) < 20) 
+								pos_right = true;
+						if (fabs(check_car_s - car_s) > 20 && fabs(check_car_s - car_s) < min_s_right) {
+							min_s_right =  fabs(check_car_s - car_s);
+							lane_change = true;
+						}
+					} else if (d > (2 + 4 * lane - 2)) {
+						if ((check_car_s > car_s) && (check_car_s - car_s) < 20) 
+								pos_left = true;
+						if (fabs(check_car_s - car_s) > 20 && fabs(check_car_s - car_s) < min_s_left) {
+							min_s_left =  fabs(check_car_s - car_s);
+							lane_change = true;
+						}
 					}
 				}
 			}
 			
 			if (too_close) {
 				ref_v -= 0.224;
+				if (lane_change) {
+					if (min_s_left > min_s_right && min_s_left < 99999){
+						if (!pos_left) {
+							too_close = false;
+						}
+						lane -= 1; 
+					}
+					else if (min_s_left < min_s_right && min_s_right < 99999){
+						if (!pos_right) {
+							too_close = false;
+						}
+						lane += 1; 
+					}
+				}
 			}
 			
           	vector<double> ptsx;
