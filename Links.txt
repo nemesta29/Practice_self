@@ -1,0 +1,81 @@
+Colab tutorial
+https://medium.com/deep-learning-turkey/google-colab-free-gpu-tutorial-e113627b9f5d
+
+GAN tutorial
+https://deeplearning4j.org/generative-adversarial-network
+
+Open AI
+https://blog.openai.com/generative-models/
+
+Reinforcement Learning
+https://deeplearning4j.org/deepreinforcementlearning.html
+https://towardsdatascience.com/introduction-to-various-reinforcement-learning-algorithms-i-q-learning-sarsa-dqn-ddpg-72a5e0cb6287
+-David Silver 
+Youtube
+https://www.youtube.com/watch?v=2pWv7GOvuf0&feature=youtu.be
+slides
+http://www0.cs.ucl.ac.uk/staff/D.Silver/web/Teaching.html
+
+Symbolic Reasoning 
+https://deeplearning4j.org/symbolicreasoning.html
+
+Alpha Zero
+http://tim.hibal.org/blog/alpha-zero-how-and-why-it-works/
+
+Instadeep
+http://www.instadeep.com/
+
+Flappy Bird
+https://medium.com/chris-nielsen/teaching-an-ai-to-play-flappy-bird-f0b18d65569b
+
+Moral Machine 
+http://moralmachine.mit.edu/
+
+MIT Deep Learning
+https://selfdrivingcars.mit.edu/deeptraffic/
+https://mit-racecar.github.io/6.141-spring-2016-team-5-documentation/
+
+Donkey Car
+http://www.donkeycar.com
+http://docs.donkeycar.com/guide/build_hardware/#parts-needed
+
+Rapidly exploring Random Tree
+https://www.coursera.org/learn/robotics-motion-planning/lecture/snRhD/3-3-introduction-to-rapidly-exploring-random-trees
+
+Search people online
+https://app.accompany.com/
+
+Steganography Paper
+https://arxiv.org/ftp/arxiv/papers/1707/1707.01613.pdf
+
+A* Algorithm
+http://blog.habrador.com/2015/11/explaining-hybrid-star-pathfinding.html
+
+One Shot AI
+https://experiments.withgoogle.com/ai/objectifier-spatial-programming
+
+RNN
+https://deeplearning4j.org/lstm.html
+
+Implementing One Shot
+https://hackernoon.com/one-shot-learning-with-siamese-networks-in-pytorch-8ddaab10340e?gi=6cdc69f2df9
+
+A Lot of times, we don't have a model, load all readings, use something like Regression to relate them?
+(Explore)
+
+MPC
+https://ac.els-cdn.com/S1474667015302573/1-s2.0-S1474667015302573-main.pdf?_tid=080a4777-0783-4790-8399-ee6d543e1f71&acdnat=1524481339_c98e0c7c133d1cd9ee1f35f074d2aba2
+
+Types of convolutions
+https://towardsdatascience.com/types-of-convolutions-in-deep-learning-717013397f4d
+
+MobileNets
+https://hackernoon.com/creating-insanely-fast-image-classifiers-with-mobilenet-in-tensorflow-f030ce0a2991
+https://arxiv.org/abs/1704.04861
+https://ai.googleblog.com/2017/06/mobilenets-open-source-models-for.html
+
+R-CNN
+https://courses.cs.washington.edu/courses/cse590v/14au/cse590v_wk1_rcnn.pdf
+
+SSD
+https://towardsdatascience.com/understanding-ssd-multibox-real-time-object-detection-in-deep-learning-495ef744fab
