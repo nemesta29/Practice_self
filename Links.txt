@@ -79,3 +79,6 @@ https://courses.cs.washington.edu/courses/cse590v/14au/cse590v_wk1_rcnn.pdf
 
 SSD
 https://towardsdatascience.com/understanding-ssd-multibox-real-time-object-detection-in-deep-learning-495ef744fab
+
+ROS examples
+https://www.programcreek.com/python/example/14044/rospy.Subscriber
